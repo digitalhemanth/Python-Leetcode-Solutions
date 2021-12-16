@@ -93,6 +93,24 @@ class dlinked_list:
                      self.head = new_node
                  n.nref = new_node
             
+    def del_s(self):
+      if self.head.nref is None:
+          self.head = None
+          print("the dl is empty")
+          return
+      else:
+        self.head = self.head.nref
+        self.head.pref = None
+    
+    def del_end(self):
+        if self.head.nref is None:
+            self.head = None
+            return
+        else:
+            n= self.head
+            while n.nref is not None:
+                n = n.nref
+            n.pref.nref  = None
         
             
 obj = dlinked_list()
@@ -102,11 +120,14 @@ obj.einsert('C')
 obj.add_before('P','B')
 obj.add_after('S','B')
 
+#obj.show()
+#obj.revshow()
 obj.show()
-
-obj.revshow()
-
-
+print("\n")
+#obj.del_s()
+#obj.show()
+obj.del_end()
+obj.show()
 #print(obj.data)
 #print(obj.lref)
 #print(obj.rref)
