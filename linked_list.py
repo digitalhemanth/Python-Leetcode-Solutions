@@ -65,6 +65,43 @@ class linked_list:
             print(n.data, end='-> ')
             n = n.next
     
+    def remove_s(self):
+        if self.head is None:
+            print("Sorry there is No nodes present here !")
+        else:
+            self.head = self.head.next
+    
+    def del_end(self):
+        if self.head is None:
+            print("Sorry there is No nodes present here !")
+        elif self.head.next is None:
+            self.head = None
+        else:
+            try:
+                n = self.head
+                while n.next.next is not None:
+                    n = n.next
+                n.next = None
+            except:
+                print("seems you have only one node")
+                
+    def del_item(self,x):
+        if self.head.data == x:
+            self.head = self.head.next
+            return
+        n = self.head
+        while n.next is not None:
+            if n.next.data == x:
+                break
+            n = n.next
+        try: 
+            if n is not None:
+               n.next = n.next.next
+        except:
+            print("Sorry the element is not found ")
+           
+        
+        
 #obj = Node('A')
 
 cobj = linked_list()
@@ -74,6 +111,19 @@ cobj.ins_end('H')
 cobj.inset_any('S','V')
 cobj.inset_any('S','B')
 cobj.add_before('L','B')
+cobj.show()
+
+#print("\n")
+#cobj.remove_s()
+#cobj.show()
+#print("\n")
+#cobj.del_end()
+#cobj.show()
+print("\n")
+cobj.del_item('K')
+cobj.show()
+print("\n")
+cobj.del_item('B')
 cobj.show()
 #print(obj.data)
 #print(obj.next)
