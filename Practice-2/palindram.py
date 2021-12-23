@@ -42,6 +42,7 @@ PS D:\Code_Place\2_test>
 '''
 
 
+'''
 def solution(string):
     N = len(string)
     maxword = ''
@@ -59,7 +60,6 @@ def solution(string):
 string = input("Please eneter any word ").lower()
 print(solution(string))
 
-'''
 Please eneter any word racesar
 r a c e s a r 7
 PS D:\Code_Place\2_test> python .\palindram.py
@@ -74,3 +74,25 @@ Please eneter any word malayalamracesar
 malayalam
 PS D:\Code_Place\2_test>
 '''
+
+
+def solution(string):
+    N = len(string)
+    strings = set()
+    
+    for id , word in enumerate(string):
+        start , end = id-1, id+1
+        while start >=0 and  end < N and string[start]==string[end]:
+            strings.add(string[start:end+1])      
+            start -=1
+            end +=1
+            
+        start , end = id, id+1
+        while start >=0 and  end < N and string[start]==string[end]:
+            strings.add(string[start:end+1])      
+            start -=1
+            end +=1    
+  
+    return strings
+string = input("Please eneter any word ").lower()
+print(solution(string))
