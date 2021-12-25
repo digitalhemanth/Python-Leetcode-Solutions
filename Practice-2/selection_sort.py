@@ -9,4 +9,7 @@ arr = [9,3,7,0,4,6,1]
 print(arr)
 size = len(arr)
 print(solution(arr))
+
+
+print("O(n2)")
    
