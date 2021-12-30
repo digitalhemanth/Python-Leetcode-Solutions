@@ -8,6 +8,10 @@ for i in range(1,100):
         print('Buz',end=' ')
     else:
         print(i,end=' ')
+
+
+Time complexity = O(n) where n is the number till we have to print the values in the fizz buzz way. Space Complexity = O(1)
+
         
         
 '''

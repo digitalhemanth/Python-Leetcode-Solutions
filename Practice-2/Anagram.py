@@ -21,3 +21,11 @@ for word in strings:
         anagramse[sorted_str] = [word]
 
 print(list(anagramse.values()))
+
+
+PS D:\Code_Place\2_test> python .\Anagram.py
+Please enter list of strings: 
+hes she dog god moon nomo hemanth hem mhe 
+['hes', 'she', 'dog', 'god', 'moon', 'nomo', 'hemanth', 'hem', 'mhe']
+[['hes', 'she'], ['dog', 'god'], ['moon', 'nomo'], ['hemanth'], ['hem', 'mhe']]
+PS D:\Code_Place\2_test> 

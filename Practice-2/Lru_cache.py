@@ -44,7 +44,7 @@ lru.create(2,'H')
 lru.show()
 
 
-'''
+
 PS D:\Code_Place\2_test> python .\Lru_cache.py
 HEMANTH
 Key not found
@@ -52,4 +52,3 @@ Object alreday in cache !
 dict_items([('E', 'HEM'), ('N', 'LOH'), ('A', 'HEMANTH')])
 PS D:\Code_Place\2_test> python .\Lru_cache.py
 
-'''

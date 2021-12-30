@@ -17,3 +17,10 @@ def solution_1(n):
         return n*solution_1(n-1)
 res = solution_1(30)
 print(res)
+
+
+
+PS D:\Code_Place\2_test> python .\fibinonsi.py    
+7
+265252859812191058636308480000000
+

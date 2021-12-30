@@ -3,7 +3,7 @@ def solution(arr,x):
         try : 
              if x==arr[i]:
                print('element found')
-               break
+               break 
         except:
             print("sorry the element is not found")
        
@@ -16,3 +16,9 @@ x = 1
 solution(arr,x)
 
 print("O(n)")
+
+
+PS D:\Code_Place\2_test> python .\linear_search.py
+[9, 3, 7, 0, 4, 6, 1]
+element found
+O(n)

@@ -9,13 +9,16 @@ def solution(x,group,low,high):
              low  = mid+1
         else:
             high = mid-1
+    else:
+        print("element not found !")
+    
         
 group = [6,8,9,7,4,3]
 
 group = sorted(group)
-#print(len(group))
+print(group)
 low = 0
 high = len(group)+1
 x = 4
-print(solution(x,group,low,high))
+solution(x,group,low,high)
 
