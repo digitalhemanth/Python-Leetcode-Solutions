@@ -58,7 +58,52 @@ class BST:
                self.rnode.search(x)
             else:
                 print("sorry the element is not found")
-            
+  
+    def delete(self,data):
+        if self.key is None:
+            print("The tree is Empty !")
+            return
+        if data < self.key :
+            if self.lnode:
+                self.lnode = self.lnode.delete(data)
+            else:
+                print("the given node is not present in the Tree")
+                
+        elif data > self.key:
+            if self.rnode:
+                self.rnode = self.rnode.delete(data)
+            else:
+                print("the given node is not present in the Tree")
+             
+        else:
+            if self.lnode is None:
+                temp = self.rnode
+                self = None
+                return temp
+            if self.rnode is None:
+                temp = self.lnode
+                self = None
+                return temp
+            node = self.rnode
+            while self.lnode:
+                node = self.lnode
+            self.key = node.key
+            self.rnode = self.rnode.delete(node.key)
+        return self
+    
+    
+     
+    def min_vall(self):
+        current = self
+        while current.lnode:
+            current= current.lnode
+        print("\nThe Min value is ", current.key)
+        
+    def max_vall(self):
+        current = self
+        while current.rnode:
+            current= current.rnode
+        print("\nThe Max value is ", current.key)        
             
                 
 root = BST(2)
@@ -84,6 +129,20 @@ root.search(5)
 print('\n Search X : ')
 root.search(4)
 
+root.delete(0)
+
+print('\n Pre Order : ')
+root.show()
+
+def count(node):
+    if node is None:
+        return 0
+    return 1+count(node.lnode)+count(node.rnode)
+    
+print("Total Nodes avelable in The tree : ", count(root))
+
+root.max_vall()
+root.min_vall()
 
 
 '''
@@ -102,4 +161,10 @@ sorry the element is not found
  Search X : 
 4  is found !
 
+ Pre Order : 
+2 1 6 3 4 8 7 9 Total Nodes avelable in The tree :  8
+
+The Max value is  9
+
+The Min value is  1
 '''
