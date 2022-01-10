@@ -26,6 +26,39 @@ class BST:
         if self.rnode:
             self.rnode.show()
             
+                
+    def inshow(self):
+        if self.lnode:
+            self.lnode.show()
+        print(self.key, end= ' ')
+        if self.rnode:
+            self.rnode.show()
+                
+    def postshow(self):
+        if self.lnode:
+            self.lnode.show()
+        if self.rnode:
+            self.rnode.show()
+        print(self.key, end= ' ')            
+    
+    def search(self,x):
+        if self.key is None:
+            print("Sorry binary serch tree is empty !")
+            return 
+        if self.key == x:
+            print(x, ' is found !')
+            return
+        if self.key > x:
+            if self.lnode:
+               self.lnode.search(x)
+            else:
+                print("sorry the element is not found")
+        else:
+            if self.rnode:
+               self.rnode.search(x)
+            else:
+                print("sorry the element is not found")
+            
             
                 
 root = BST(2)
@@ -36,5 +69,19 @@ tree = [6,8,3,4,1,0,7,9]
 for i in tree:
     root.insert(i)
 
-print('Pre Order : ')
+print('\n Pre Order : ')
 root.show()
+
+print('\n IN Order : ')
+root.inshow()
+
+print('\n Post Order : ')
+root.postshow()
+
+print('\n Search X : ')
+root.search(5)
+
+print('\n Search X : ')
+root.search(4)
+
+
