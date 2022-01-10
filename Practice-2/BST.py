@@ -85,3 +85,21 @@ print('\n Search X : ')
 root.search(4)
 
 
+
+'''
+PS D:\Code_Place\2_test> python .\BST.py
+2
+
+ Pre Order : 
+2 1 0 6 3 4 8 7 9 
+ IN Order : 
+1 0 2 6 3 4 8 7 9 
+ Post Order : 
+1 0 6 3 4 8 7 9 2 
+ Search X : 
+sorry the element is not found
+
+ Search X : 
+4  is found !
+
+'''
