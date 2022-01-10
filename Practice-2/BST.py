@@ -19,6 +19,15 @@ class BST:
             else:
                 self.rnode = BST(data)
                 
+    def show(self):
+        print(self.key, end= ' ')
+        if self.lnode:
+            self.lnode.show()
+        if self.rnode:
+            self.rnode.show()
+            
+            
+                
 root = BST(2)
 print(root.key)
 
@@ -27,4 +36,5 @@ tree = [6,8,3,4,1,0,7,9]
 for i in tree:
     root.insert(i)
 
-print(root)
+print('Pre Order : ')
+root.show()
