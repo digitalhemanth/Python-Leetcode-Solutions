@@ -50,7 +50,19 @@ f.fileno()	#Returns an integer number (file descriptor) of the file.
 
 import os
 
-os.getcwd() 
-     
+os.getcwd()  #Get Current Directory
+os.chdir('C:\\Python') #Changing Directory
+os.listdir() #List Directories and Files
+os.listdir('G:\\') #List sub Directories and Files
+os.mkdir('test') #Making a New Directory
+os.rename('test','new_one') #Renaming a Directory or a File
+os.remove('old.txt') # Removing  File  
+os.rmdir('new_one') # Removing empty Directory 
+
+import shutil
+
+shutil.rmtree('test') # Removing Directory along with sub Files
+   
+
      
      
