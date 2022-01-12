@@ -62,7 +62,5 @@ os.rmdir('new_one') # Removing empty Directory
 import shutil
 
 shutil.rmtree('test') # Removing Directory along with sub Files
-   
-
      
      
