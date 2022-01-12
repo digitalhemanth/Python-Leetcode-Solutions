@@ -34,4 +34,23 @@ import json
 with open("student.json", "w") as write_file:
      json.dump(todos, write_file,indent= 4, sort_keys=True )
      
+f = open("test.txt",'r',encoding = 'utf-8')
+f.read(4)  # read the first 4 data
+
+
+f.seek(0)   # bring file cursor to initial position
+f.tell()    # get the current file position
+
+#We can read a file line-by-line using a for loop. This is both efficient and fast.
+for line in f:
+     print(line, end = '')
+     
+f.fileno()	#Returns an integer number (file descriptor) of the file.
+
+
+import os
+
+os.getcwd() 
+     
+     
      
