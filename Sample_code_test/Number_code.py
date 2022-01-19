@@ -11,13 +11,11 @@ def numres(num : int) -> int:
 
 print(numres(12345))
 
-'''
-def strings(word):
-    tmp =''
-    for i in word:
-        tmp = i+tmp
-    return tmp
 
-print(strings('hem'))
+#2. Python Program to Reverse a number using sclicing 
 
-'''
+number  = 11211
+if str(number) == str(number)[::-1]:
+    print(number)
+else:
+    print('Not a palindrom')

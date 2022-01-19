@@ -8,3 +8,10 @@ def strings(word):
 
 print(strings('hem'))
 
+#2. Python Program to Reverse a Strintg 
+
+word = 'malayalam'
+if word == word[::-1]:
+    print(word)
+else:
+    print('Not a palindrom')
