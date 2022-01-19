@@ -23,23 +23,16 @@ else:
     
     
     
-    # Python program to check if the number is an Armstrong number or not
+# Python program to check if the number is an Armstrong number or not
 
-# take input from the user
-num = int(input("Enter a number: "))
-
-# initialize sum
+num = 153
 sum = 0
-
-# find the sum of the cube of each digit
-temp = num
-while temp > 0:
-   digit = temp % 10
-   sum += digit ** 3
-   temp //= 10
-
-# display the result
-if num == sum:
-   print(num,"is an Armstrong number")
+tmp = num
+while tmp>0:
+    digit = tmp%10
+    sum = sum+digit**3
+    tmp //=10
+if num==sum:
+    print(num)
 else:
-   print(num,"is not an Armstrong number")
+    print("Try again")
