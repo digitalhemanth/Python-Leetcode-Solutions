@@ -36,3 +36,19 @@ if num==sum:
     print(num)
 else:
     print("Try again")
+    
+def find_armstrong():
+    arm = []
+    for i in range(100000):
+        tmp = i
+        sum = 0 
+        while tmp>0:
+            digit= tmp%10
+            sum=sum+digit**3
+            tmp //= 10
+        if i == sum:
+           arm.append(i)
+    return(arm)
+
+print(find_armstrong())
+        
