@@ -79,4 +79,21 @@ while count<num:
     n2 = nth 
     
 
+#fibonacci sequence 
+
+def check_fibunacci(n):
+    if n <=1:
+        return 1
+    else:
+        return check_fibunacci(n-1) + check_fibunacci(n-2)
+    
+num = 8
+
+if num<=0:
+    print("sorry ")
+else:
+    for i in range(num):
+        print(check_fibunacci(i))
+    
+
         
