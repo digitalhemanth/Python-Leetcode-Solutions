@@ -52,3 +52,16 @@ def find_armstrong():
 
 print(find_armstrong())
         
+        
+#A positive integer greater than 1 which has no other factors except 1 and the number itself is called a prime number. 2, 3, 5, 7 etc.
+
+num = 7
+
+for i in range(2,num+1):
+    if num % i == 0:
+        print("Its prime")
+    else:
+        print("not prime")
+     
+        
+    
