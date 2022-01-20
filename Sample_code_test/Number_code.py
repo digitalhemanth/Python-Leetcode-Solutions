@@ -64,4 +64,19 @@ for i in range(2,num+1):
         print("not prime")
      
         
+#fibonacci sequence 
+
+n1,n2 = 0,1 
+count = 0 
+
+num = 8
+
+while count<num:
+    print(n1)
+    nth = n1+n2
+    count += 1
+    n1 = n2
+    n2 = nth 
     
+
+        
