@@ -114,3 +114,12 @@ if flag==0:
     print("No")
 else:
     print("Yes")
+    
+    
+#max of an given integer 
+num = 57319
+
+x = [int(x) for x in str(num)]
+max(x)
+    
+    
