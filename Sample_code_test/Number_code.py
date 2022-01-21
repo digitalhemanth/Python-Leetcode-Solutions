@@ -96,4 +96,21 @@ else:
         print(check_fibunacci(i))
     
 
+# check if a number is in binary
+
+num = 1001110
+
+flag = 0 
+
+for i in str(num):
+    if i in '10':
+        print(i)
+        flag = 1
+    else:
+        print("it should have 01 s ")
+        flag = 0
         
+if flag==0:
+    print("No")
+else:
+    print("Yes")
