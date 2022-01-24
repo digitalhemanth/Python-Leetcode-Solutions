@@ -1,13 +1,12 @@
 # BFS algorithm in Python
 
 
-
 import collections
 
 # BFS algorithm
 def bfs(graph, root):
 
-    visited, queue = set(), collections.deque([root]
+    visited, queue = set(), collections.deque([root
     visited.add(root)
 
     while queue:
