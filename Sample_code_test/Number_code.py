@@ -200,3 +200,14 @@ n1 = int(input("Enter first number: "))
 n2 = int(input("Enter second number: "))
 
 print("The sum is:", add_two_numbers(n1, n2))
+
+
+#Perfect number program in Python
+
+n = 12
+sums = 1
+for i in range(2,n):
+    if n%i ==0:
+        sums = sums+i
+        
+print(sums)
