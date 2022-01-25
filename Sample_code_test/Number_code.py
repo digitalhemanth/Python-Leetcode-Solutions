@@ -182,3 +182,21 @@ num = 12
 # Iterate 10 times from i = 1 to 10
 for i in range(1, 11):
    print(num, 'x', i, '=', num*i)
+
+
+
+# Add two numbers using Bitwise Operator
+
+def add_two_numbers(n1, n2):
+    if n2 == 0:
+        return n1
+    else:
+        print(n1 ^ n2)
+        print(n1 & n2)
+        return add_two_numbers(n1 ^ n2, (n1 & n2) << 1)
+
+
+n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+
+print("The sum is:", add_two_numbers(n1, n2))
