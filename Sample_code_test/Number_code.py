@@ -123,3 +123,11 @@ x = [int(x) for x in str(num)]
 max(x)
     
     
+num = 253
+
+sum = 0 
+for i in str(num):
+    sum = int(i)+sum
+    
+print(sum)
+    
