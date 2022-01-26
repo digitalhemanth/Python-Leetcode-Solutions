@@ -18,7 +18,10 @@ else:
     
 #remove a spesific charachter from string 
 name = 'Hemanth'
-
 res = name.replace('n','')
+print(res)
 
+#Count the number of occurrences of a character in a string
+name = 'hemanth'
+res = name.count('h')
 print(res)
