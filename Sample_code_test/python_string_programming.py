@@ -15,3 +15,10 @@ if word == word[::-1]:
     print(word)
 else:
     print('Not a palindrom')
+    
+#remove a spesific charachter from string 
+name = 'Hemanth'
+
+res = name.replace('n','')
+
+print(res)
