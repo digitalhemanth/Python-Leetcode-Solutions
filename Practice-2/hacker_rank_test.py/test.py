@@ -12,7 +12,9 @@ for i in range(len(s)):
         index = i
 res = s[:index]
 print(res)
-'''
+
+
+
 class python:
     def __init__(self,a,b=1):
         self.a = a 
@@ -23,7 +25,7 @@ obj1=python(5,10)
 obj2=python(1)
 obj1.c=2
 obj1.display()
-'''
+
 '''
 List = []
 List.append(2)
