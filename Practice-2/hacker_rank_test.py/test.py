@@ -26,7 +26,7 @@ obj2=python(1)
 obj1.c=2
 obj1.display()
 
-'''
+
 List = []
 List.append(2)
 List.append(0)
@@ -36,4 +36,3 @@ for i in range(1,4):
 for i in range(1,5):
     List.insert(3, 'Python')
 print(List)
-'''
