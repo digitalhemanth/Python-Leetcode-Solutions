@@ -17,5 +17,4 @@ def solution(array):
 
 array = [-2, 100, -3, 4, -1, 2, 1, -5, 4]
 
-
 print('The sum of contiguous sublist with the largest sum is',solution(array))
