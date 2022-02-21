@@ -19,6 +19,6 @@ for char in string:
    ## str.count(char) returns the frequency of a char in the str
    if string.count(char) > 1:
    ## appending to the list if it's already not present
-   if char not in duplicates:
-   duplicates.append(char)
+       if char not in duplicates:
+           duplicates.append(char)
 print(*duplicates)
