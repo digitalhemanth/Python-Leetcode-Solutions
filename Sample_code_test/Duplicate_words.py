@@ -6,3 +6,5 @@ for word in words:
         counts[word] = 0
     counts[word] += 1
 print(counts.items())
+
+print(counts)
