@@ -2,7 +2,7 @@ sentence = input("Please enter a sentence")
 words = sentence.split()
 counts = {}
 for word in words:
-    if word in counts:
-        counts[word] = word
+    if word  not in counts:
+        counts[word] = 0
     counts[word] += 1
-print(counts)
+print(counts.items())
