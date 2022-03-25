@@ -12,8 +12,17 @@ for i in My_list:
     else:
         print(i,end=' ')
 '''
-
+'''
 dups = { x for x in My_list if My_list.count(x)>1 }
 
 print(dups)
-    
+'''
+dups = {}
+
+for ele in My_list:
+    if ele in dups:
+        dups[ele] += 1
+    else:
+        dups[ele] = 1
+ 
+print(dups, end=' ')
