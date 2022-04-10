@@ -1,6 +1,7 @@
 def ints(x,y,arry) ->int:
     sum = 0
-    for i in range(arry(arry[x],arry(arry[y]))):
+    for i,j in enumerate(arry):
+        
         sum = i+sum
     return sum
 
