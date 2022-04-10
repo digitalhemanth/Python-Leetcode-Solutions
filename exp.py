@@ -1,8 +1,9 @@
 def ints(x,y,arry) ->int:
     sum = 0
     for i,j in enumerate(arry):
-        
-        sum = i+sum
+        if i>=x and i<=y:
+            print(j)
+            sum = j+sum
     return sum
 
 arry = [10,20,30,40,50,60]
