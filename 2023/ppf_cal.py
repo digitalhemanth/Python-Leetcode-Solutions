@@ -7,9 +7,7 @@ time_period = int(input("Enter time period in years: "))
 interest_rate = float(input("Enter interest rate in percentage: ")) / 100
 
 # Calculate the total investment amount
-total_investment = monthly_investment * 12 * time_period
-
-# Create a list to store the investment and interest earned for each year
+total_investment = 0
 investment_list = []
 interest_list = []
 remaining_years_list = []
@@ -19,9 +17,9 @@ maturity_amount_list = []
 # Calculate the investment, interest earned, maturity amount till date, and total amount deposited for each year
 for year in range(1, time_period+1):
     investment = monthly_investment * 12
-    interest_earned = round(total_investment * interest_rate - sum(interest_list), 2)
-    maturity_amount = round(total_investment, 2)
-    total_investment += investment + interest_earned
+    total_investment += investment
+    interest_earned = round(total_investment * interest_rate, 2)
+    maturity_amount = round(total_investment + interest_earned, 2)
     remaining_years = time_period - year
     total_deposited = monthly_investment * 12 * year
     investment_list.append(investment)
@@ -42,5 +40,5 @@ df = pd.DataFrame({'Year': range(1, time_period+1),
 print(df.to_string(index=False))
 
 # Calculate and display the total maturity amount
-total_maturity_amount = round(sum(maturity_amount_list), 2)
+total_maturity_amount = round(maturity_amount_list[-1], 2)
 print(f"\nTotal Maturity Amount: {total_maturity_amount}")
