@@ -17,3 +17,11 @@ records = [    {'id': 1, 'name': 'Alice', 'age': 25},    {'id': 2, 'name': 'Bob'
 filtered_records = [r for r in records if 25 <= r['age'] <= 30]
 
 print(filtered_records)
+
+
+count = 0
+for r in records:
+    if 25 <= r['age'] <= 30:
+        count += 1
+
+print(f"Total number of records between 25 and 30 years old: {count}")
