@@ -25,3 +25,8 @@ for r in records:
         count += 1
 
 print(f"Total number of records between 25 and 30 years old: {count}")
+
+
+count = len([r for r in records if 25 <= r['age'] <= 30])
+
+print(f"Total number of records between 25 and 30 years old: {count}")
