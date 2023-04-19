@@ -1,3 +1,4 @@
+global my_dict
 my_dict = {}
 
 def add_dict(id, name, age, location):
@@ -10,7 +11,9 @@ def show():
     print(my_dict)
 
 while True:
-    choice = int(input("Enter your choice (1. add data /n 2. show data /n 3. delete data /n 4.Exit): "))
+    print(" \n \n1. add data\n2. show data\n3. delete data\n4. Exit\n")
+
+    choice = int(input("Enter your choice :"))
     if choice == 1:
         id = input("Enter your id: ")
         name = input("Enter your name: ")
