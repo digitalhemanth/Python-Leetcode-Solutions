@@ -16,6 +16,8 @@ note.add(5)
 
 kotu = {6,2,9,4,6}
 
-note.union(kotu)
+# note = note.union(kotu)
+
+note = note.intersection(kotu)
 
 print(note)
