@@ -5,6 +5,11 @@ note = {2,2,3}
 
 note.add(5)
 
-note.remove(2)
+# note.remove(2)
+
+# # note.remove(66)
+# note.discard(66)
+
+# note.pop()
 
 print(note)
