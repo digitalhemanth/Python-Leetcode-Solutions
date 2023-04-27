@@ -14,5 +14,8 @@ note.add(5)
 
 # note.clear()
 
+kotu = {6,2,9,4,6}
+
+note.union(kotu)
 
 print(note)
