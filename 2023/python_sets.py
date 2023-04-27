@@ -12,4 +12,7 @@ note.add(5)
 
 # note.pop()
 
+# note.clear()
+
+
 print(note)
