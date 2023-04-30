@@ -1,4 +1,8 @@
 
+
+Python provides a wide variety of built-in string methods that you can use to manipulate strings. Here are some commonly used methods:
+
+
 upper() - converts all the characters in a string to uppercase.
 lower() - converts all the characters in a string to lowercase.
 capitalize() - converts the first character of a string to uppercase and the rest to lowercase.
