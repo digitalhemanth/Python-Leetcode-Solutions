@@ -1,0 +1,11 @@
+"I have four years of experience in big data and data engineering, and it has been an exciting and rewarding journey so far. I have worked with a variety of data processing technologies such as Hadoop, Spark, Kafka, and NoSQL databases.
+
+During my career, I have designed and implemented data pipelines for processing large amounts of data efficiently and accurately. I have also built data warehouses to store and manage structured and unstructured data. Additionally, I have worked on managing data platforms on the cloud, such as AWS and Azure.
+
+My experience has taught me that data engineering is a challenging field that requires a unique set of skills, including strong programming skills, knowledge of data structures, and expertise in data processing technologies. I am passionate about this field because it offers an opportunity to work with data at scale and solve complex data-related problems.
+
+As a data engineer, I want to continue to grow and learn new skills. I believe that data engineering is a field that is constantly evolving, and staying up-to-date with the latest technologies and trends is critical to success. With my experience and passion for data engineering, I am confident that I can contribute to any organization and excel in this field."
+
+
+
+
