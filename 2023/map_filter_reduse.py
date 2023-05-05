@@ -1,6 +1,16 @@
 #map() : The map() function takes a function and an iterable as arguments, and applies the function to each element of the iterable,
 # returning an iterator with the results.
 
+def square(x):
+    result = x**2
+    print(f"Square of {x} is {result}")
+    return result
+
+numbers = [1, 2, 3, 4, 5]
+squares = map(square, numbers)
+print(list(squares))
+
+
 # filter()
 # The filter() function takes a function and an iterable as arguments, and returns an iterator with the elements of the iterable for which the function returns True.
 
