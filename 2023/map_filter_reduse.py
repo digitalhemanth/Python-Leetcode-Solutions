@@ -14,6 +14,18 @@ print(list(squares))
 # filter()
 # The filter() function takes a function and an iterable as arguments, and returns an iterator with the elements of the iterable for which the function returns True.
 
+def is_even(x):
+    result = x % 2 == 0
+    if result:
+        print(f"{x} is even")
+    else:
+        print(f"{x} is odd")
+    return result
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = filter(is_even, numbers)
+print(list(even_numbers))
+
 
 # reduce()
 # The reduce() function takes a function and an iterable as arguments, and applies the function to the first two elements of the iterable, 
