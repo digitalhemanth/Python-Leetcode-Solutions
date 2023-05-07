@@ -95,4 +95,21 @@ while True:
             file_name = input("Enter the file name to create: ")
             file.create_file(file_name)
         elif file_option == "2":
-            file_name = input("
+            file_name = input("Enter the file name to update: ")
+            file.update_file(file_name)
+        elif file_option == "3":
+            file_name = input("Enter the file name to get details: ")
+            file.get_file_details(file_name)
+        elif file_option == "4":
+            file_name = input("Enter the file name to delete: ")
+            file.delete_file(file_name)
+        else:
+            print("Invalid option.")
+
+    elif option == "3":
+        print("Exiting the program...")
+        break
+
+    else:
+        print("Invalid option.")
+
