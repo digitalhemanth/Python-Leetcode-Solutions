@@ -22,3 +22,10 @@ print_arguments('apple', 'banana', 'cherry')
 
 # kwargs stands for "keyword arguments" and allows you to pass a variable number of keyword arguments to a function. It enables you to pass arguments as key-value pairs, and the function receives them as a dictionary.
 
+def print_keyword_arguments(**kwargs):
+    for key, value in kwargs.items():
+        print(key, value)
+
+print_keyword_arguments(fruit='apple', animal='lion', color='red')
+
+
