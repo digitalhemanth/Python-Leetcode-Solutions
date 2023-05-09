@@ -34,3 +34,16 @@ my_list = [1, 2, 3]
 my_iterator = MyIterator(my_list)
 for item in my_iterator:
     print(item)
+
+
+#genarators
+
+def even_numbers(n):
+    for i in range(n):
+        if i % 2 == 0:
+            yield i
+
+# Usage:
+even_gen = even_numbers(10)
+for num in even_gen:
+    print(num)
