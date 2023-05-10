@@ -1,4 +1,14 @@
 """
 Asynchronous programming is a programming paradigm that allows tasks to run concurrently and independently of each other, without blocking the execution of the main program. In Python, asynchronous programming is primarily achieved using coroutines, the asyncio library, and the await and async keywords.
 
+Here's a brief overview of how asynchronous programming works in Python:
+
+Coroutines: Coroutines are special functions that can be paused and resumed during their execution. They are defined using the async def syntax. Within a coroutine, you can use the await keyword to pause the execution until a result is available from an asynchronous operation.
+
+asyncio library: Python's asyncio library provides a framework for writing asynchronous code. It includes an event loop, which is responsible for scheduling and executing coroutines, and various utility functions and classes for asynchronous I/O operations.
+
+Event Loop: The event loop is the core of the asyncio framework. It manages the execution of coroutines and handles I/O operations, timers, and callbacks. The event loop is responsible for running coroutines concurrently and switching between them when they are waiting for I/O or other operations to complete.
+
+await and async keywords: The await keyword is used within a coroutine to pause its execution until an awaitable object completes. An awaitable can be a coroutine, a Future object, or other objects that support the __await__ method. The async keyword is used to define coroutines and functions that can be awaited.
+
 """
