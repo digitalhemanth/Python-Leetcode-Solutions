@@ -12,3 +12,24 @@ Event Loop: The event loop is the core of the asyncio framework. It manages the 
 await and async keywords: The await keyword is used within a coroutine to pause its execution until an awaitable object completes. An awaitable can be a coroutine, a Future object, or other objects that support the __await__ method. The async keyword is used to define coroutines and functions that can be awaited.
 
 """
+
+
+import asyncio
+
+async def print_message(message, delay):
+    await asyncio.sleep(delay)
+    print(message)
+
+async def main():
+    # Schedule the coroutines concurrently
+    coro1 = print_message("Hello", 2)
+    coro2 = print_message("Async", 1)
+    coro3 = print_message("World", 3)
+
+    # Gather and wait for coroutines to complete
+    await asyncio.gather(coro1, coro2, coro3)
+
+# Run the event loop
+asyncio.run(main())
+
+
