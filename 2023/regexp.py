@@ -26,6 +26,7 @@ re.findall(pattern, string): Returns all non-overlapping matches of the pattern 
 re.finditer(pattern, string): Returns an iterator yielding match objects for all non-overlapping matches of the pattern in the string.
 
 re.split(pattern, string): Splits the string by the occurrences of the pattern and returns a list of substrings.
+
 re.sub(pattern, repl, string): Searches for all occurrences of the pattern in the string and replaces them with the specified replacement string.
 
 re.subn(pattern, repl, string): Similar to re.sub(), but also returns the number of substitutions made.
