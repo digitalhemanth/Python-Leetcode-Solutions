@@ -49,3 +49,4 @@ for folder in folders:
 
 
 all_files = os.walk(folder_path)
+print(all_files)
