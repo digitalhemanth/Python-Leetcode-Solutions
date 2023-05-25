@@ -49,4 +49,10 @@ for folder in folders:
 
 
 all_files = os.walk(folder_path)
-print(all_files)
+
+all_files_list = tuple(all_files)
+for root, directories, files in all_files:
+    print("Directory:", root)
+    print("Subdirectories:", directories)
+    print("Files:", files)
+    print("---")
