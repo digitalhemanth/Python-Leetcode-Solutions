@@ -3,7 +3,7 @@ import os
 
 
 """
-    open(): Opens a file and returns a file object.
+open(): Opens a file and returns a file object.
 close(): Closes the file.
 read(): Reads the entire contents of the file as a string.
 readline(): Reads a single line from the file.
