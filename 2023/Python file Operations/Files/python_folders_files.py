@@ -12,7 +12,7 @@ def count_and_list_folders(path):
     return folder_count, folder_list
 
 # Provide the path to the XYZ folder
-folder_path = '/path/to/XYZ'
+folder_path = r'D:\Code_Place\Python-jupyter-notebook\2023\Python file Operations\Files'
 
 count, folders = count_and_list_folders(folder_path)
 
