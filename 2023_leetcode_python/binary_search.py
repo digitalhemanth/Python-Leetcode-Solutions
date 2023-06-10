@@ -18,4 +18,20 @@ def BibarySerch(Arryas, target):
     return "element not found"
     
 
-print(BibarySerch([2,4,6,8,12,14], 8))
+print(BibarySerch([2,4,6,8,12,14], 5))
+
+
+
+
+
+"""
+    The time complexity of the binary search algorithm implemented in the provided code is O(log N), where N is the number of elements in the array. This is because the search space is halved in each iteration of the while loop, leading to a logarithmic time complexity.
+
+The space complexity of the code is O(1) because it uses a constant amount of additional memory. The variables left, right, middle, and mid_ele require a constant amount of space, regardless of the size of the input array.
+
+In summary:
+
+Time complexity: O(log N)
+Space complexity: O(1)
+
+"""
