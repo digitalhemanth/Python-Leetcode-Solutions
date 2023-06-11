@@ -13,6 +13,6 @@ def find_twosum(Array, target):
         complement = target - num
         if complement in complement_map:
             print(f'{num} + {complement} = {target}')
-        complement_map[num] = True
-
-find_twosum([1, 5, 3, 7, 2, 9, 8], 12)
+        complement_map[num] = 1
+    return complement_map
+print(find_twosum([1, 5, 3, 7, 2, 9, 8], 12))
