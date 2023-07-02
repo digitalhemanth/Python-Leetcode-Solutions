@@ -1,14 +1,16 @@
 def Quick_sort(arry):
-    for a in range(len(arry)):
-        for i in range(0, len(arry)-1):
-            if arry[i] > arry[i+1]:
-                arry[i] , arry[i+1] = arry[i+1], arry[i]
-        print(arry) 
+    for i in range(len(arry)):
+        min_ele = i
+        for j in range(i+1, len(arry)):
+            if arry[j] < arry[min_ele]:
+                min_ele = j
+                
+        arry[i],arry[min_ele] =  arry[min_ele],  arry[i]
       
     return arry    
                         
 arry = [2,8,4,1,-6,9,5]
-Quick_sort(arry)
+print(Quick_sort(arry))
 
 
 
