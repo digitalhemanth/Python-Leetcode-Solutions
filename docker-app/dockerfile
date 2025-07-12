@@ -1,0 +1,12 @@
+# Use the official Python image from DockerHub
+FROM python:3.11-slim
+
+# Set the working directory in the container
+WORKDIR /sample
+
+# Copy the local script to the container
+COPY sample.py .
+
+# Run the script
+CMD ["python", "sample.py"]
+ 
