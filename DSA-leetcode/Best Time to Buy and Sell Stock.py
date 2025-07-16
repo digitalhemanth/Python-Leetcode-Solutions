@@ -49,4 +49,5 @@ def best_time_to_buy_and_sell(prices):
 
 # Example
 prices = [7, 1, 5, 3, 6, 4]
+
 best_time_to_buy_and_sell(prices)
